@@ -1,0 +1,106 @@
+/* General Styling */
+.transaction-dashboard {
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: #e3f2f5; /* Light blue background */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.transaction-dashboard h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.controls input[type="text"] {
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #f0c75e;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.controls select {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #f0c75e;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Table Styling */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 15px;
+    text-align: center;
+    background-color: #f0c75e; /* Yellow color */
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+.transaction-table th {
+    background-color: #f5d78a; /* Lighter yellow */
+    font-size: 16px;
+}
+
+.transaction-table tbody tr:nth-child(even) {
+    background-color: #f7e4a1;
+}
+
+.transaction-image {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0c75e;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+}
+.transaction-image {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for styling */
+}
